@@ -9,7 +9,10 @@ class Login extends Component {
                     <div className="login__wrapper">
                         <div className="login__title">Authorisation</div>
                         <div className="login__content">
-                            <form className="login__form">
+                            <form 
+                                className="login__form"
+                                onSubmit={this.enter}
+                            >
                                 <label className="login__form_data">
                                     <div className="login__form_pic login__form_pic_login"></div>
                                     <div className="login__form_info">
@@ -33,6 +36,10 @@ class Login extends Component {
                 </div>
             </div>
         );
+    }
+    enter = (event) => {
+        event.preventDefault();
+        this.props.enter();
     }
 };
 

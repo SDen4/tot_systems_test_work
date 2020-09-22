@@ -24,3 +24,10 @@
     top: 20px;
     right: 20px;
 }
+
+.button__exit {
+    background-color: $buttonBackBGColor;
+    &:hover {
+        background-color: $buttonBackBGColorHover;
+    }
+}

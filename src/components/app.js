@@ -6,18 +6,24 @@ import Choose from './choose';
 
 class App extends Component {
     state = {
-        login: true,
-        choose: false
+        login: false,
+        choose: true
     }
     render() {
-        const login = this.state.login && <Login />
-        const choose = this.state.choose && <Choose />
+        const login = this.state.login && <Login enter={this.enter}/>
+        const choose = this.state.choose && <Choose backToLogin={this.enter} />
         return (
             <div className="main">
                 {login}
                 {choose}
             </div>
         );
+    }
+    enter = () => {
+        this.setState({
+            login: !this.state.login,
+            choose: !this.state.choose
+        })
     }
 };
 

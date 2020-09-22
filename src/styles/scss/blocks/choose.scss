@@ -1,0 +1,15 @@
+.choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.choose__content {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-bottom: 100px;
+}
