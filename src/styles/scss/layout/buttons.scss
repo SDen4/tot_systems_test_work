@@ -1,49 +1,26 @@
-.buttonCommon {
-    border-radius: 5px;
-    outline: none;
-    padding: 5px 10px;
-}
-
-.buttonActive {
-    background-color: $mainRed;
-    transition: .5s;
-    &:hover {
-        background-color: pink;
-    }
-}
-
-.buttonUnActive {
-    background-color: green;
-    transition: .5s;
-    &:hover {
-        background-color: rgb(66, 190, 42);
-    }
-}
-
-.admin__button {
+.button {
     cursor: pointer;
     outline: none;
-    padding: 15px 25px;
-    font-size: 18px;
+    padding: 10px 25px;
+    font-size: $buttonFontSize;
     color: $textColor;
     border: 0;
     border-radius: $borderRadius;
     transition: $trahsitionHoverDuration;
     background-color: $buttonBGColor;
     &:hover {
-        color: $bodyBGColor;
         background-color: $buttonBGColorHover;
-    }
-    &:active {
-        transition: none;
     }
 }
 
-.admin__button_login_close {
+.button__login_close {
     width: 22PX;
     height: 22PX;
     border: 0;
     outline: none;
     background: url("https://sden4.github.io/tot_systems_test_work/assets/images/Cross.svg");
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
