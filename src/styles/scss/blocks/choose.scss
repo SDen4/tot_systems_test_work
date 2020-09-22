@@ -9,7 +9,18 @@
 
 .choose__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     width: 35%;
-    margin-bottom: 100px;
+    height: 250px;
+}
+
+.choose__content_mod {
+    height: 50px;
+    animation: anime2 1s;
+}
+
+@keyframes anime2 {
+    from {height: 250px;}
+    to {height: 50px;}
 }

@@ -6,14 +6,14 @@ import Choose from './choose';
 
 class App extends Component {
     state = {
-        login: false,
-        choose: true
+        login: true,
+        choose: false
     }
     render() {
         const login = this.state.login && <Login enter={this.enter}/>
         const choose = this.state.choose && <Choose backToLogin={this.enter} />
         return (
-            <div className="main">
+            <div className='main'>
                 {login}
                 {choose}
             </div>

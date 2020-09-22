@@ -27,7 +27,35 @@
 
 .button__exit {
     background-color: $buttonBackBGColor;
+    margin-top: 300px;
     &:hover {
         background-color: $buttonBackBGColorHover;
     }
+}
+
+.button__exit_mod {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    animation-direction: alternate;
+    animation: anime 1s;
+}
+
+.button__unactive {
+    display: none;
+}
+
+@keyframes anime {
+    from {margin-top: 300px}
+    to {margin-top: 0px}
+}
+
+.button__choose {
+    font-size: 60px;
+    padding: 40px 50px;
+}
+
+.button__small {
+    padding: 10px 25px;
+    font-size: $buttonFontSize;
 }
