@@ -83,6 +83,7 @@ module.exports = {
             filename: `${PATHS.assets}css/[name].css`,
         }),
         new CopyWebpackPlugin([
+            {from: `${PATHS.src}/images`, to: `${PATHS.assets}images`},
             {from: `${PATHS.src}/static`, to: ''}
         ]),
         new HtmlWebpackPlugin ({

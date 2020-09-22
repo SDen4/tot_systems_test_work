@@ -59,6 +59,11 @@ img {
   max-height: 100%;
 }
 
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
 //   // delete arrows from input type number in Chrome, Safari, Edge, Opera
 // input::-webkit-outer-spin-button,
 // input::-webkit-inner-spin-button {
