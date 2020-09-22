@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 
-import Login from './login';
-
-class App extends Component {
+class Login extends Component {
     state = {
     }
     render() {
         return (
-            <Login></Login>
+            <div>Login</div>
         );
     }
 };
 
-export default App;
+export default Login;
