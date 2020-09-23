@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 class Chat extends Component {
     render() {
         const title = this.props.work ? "Работа" : "Болтовня";
-        const messagesList = this.props.messages.map( message => 
+        const messages = this.props.work ? this.props.messagesWork : this.props.messagesFlud;
+        const messagesList = messages.map( message => 
             <li key={message.id} className="chat__message">{message.message}</li>
         );
         return (

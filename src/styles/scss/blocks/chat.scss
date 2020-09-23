@@ -8,11 +8,8 @@
     border: 1px solid $loginWindowBorderColor;
     border-radius: $borderRadius;
     margin-bottom: 50px;
-    // background-color: $loginWindowBGColor;
     //this path just only for displaying on github pages!
-    background: linear-gradient(0deg, #fff,rgba(255,255,255, 0.85) 50%, #fff), url("https://sden4.github.io/tot_systems_test_work/assets/images/bg2new.png");
-
-
+    background: linear-gradient(0deg, $loginWindowBGColor,rgba(255,255,255, 0.85) 50%, $loginWindowBGColor), url("https://sden4.github.io/tot_systems_test_work/assets/images/bg2new.png");
 }
 
 .chat__subtitle {

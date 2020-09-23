@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import messages from '../scripts/flud';
+import messagesFlud from '../scripts/flud';
+import messagesWork from '../scripts/work';
 
 import Chat from './chat';
 
@@ -10,7 +11,12 @@ class Choose extends Component {
         flud: false
     }
     render() {
-        const chatWindow = this.state.chat && <Chat messages={messages} work={this.state.work}/>
+        const chatWindow = this.state.chat && 
+            <Chat
+                messagesFlud={messagesFlud}
+                messagesWork={messagesWork}
+                work={this.state.work}
+            />
         return (
             <div className='choose'>
                 {chatWindow}
