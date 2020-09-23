@@ -16,17 +16,17 @@ class Choose extends Component {
                 {chatWindow}
                 <div
                     className={`${this.state.chat ? 'choose__content choose__content_mod' : 'choose__content'}`}
-                >
-                    <button
-                        className={`${this.state.work ? 'button__unactive' : 'button button__choose'}`}
-                        onClick={this.openChatWork}
-                    >Поработать</button>
+                >                    
                     <button
                         className={`${this.state.chat ? 'button button__exit button__exit_mod' : 'button button__exit'}`}
                         onClick={this.backToLogin}
                     >Exit</button>
                     <button
-                        className={`${this.state.flud ? 'button__unactive' : 'button button__choose'}`}
+                        className={`${this.state.work ? 'button__unactive' : 'button button__choose button__choose_work'}`}
+                        onClick={this.openChatWork}
+                    >Поработать</button>
+                    <button
+                        className={`${this.state.flud ? 'button__unactive' : 'button button__choose button__choose_flud'}`}
                         onClick={this.openChatFlud}
                     >Поболтать</button>
                 </div>

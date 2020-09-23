@@ -1,9 +1,16 @@
 .login {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+}
+
+.login__title {
+    color: $titleColor;
+    font-size: $titleFontSize;
+    margin-bottom: 50px;
 }
 
 .login__block {
@@ -26,8 +33,8 @@
     justify-content: space-between;
 }
 
-.login__title {
-    font-size: 36px;
+.login__subtitle {
+    font-size: $subtitleFontSize;
 }
 
 .login__content {

@@ -26,6 +26,7 @@
 }
 
 .button__exit {
+    order: 2;
     background-color: $buttonBackBGColor;
     margin-top: 300px;
     &:hover {
@@ -41,6 +42,11 @@
     animation: anime 1s;
 }
 
+.button__exit_mod ~ .button__choose {
+    padding: 10px 25px;
+    font-size: $buttonFontSize;
+}
+
 .button__unactive {
     display: none;
 }
@@ -53,6 +59,14 @@
 .button__choose {
     font-size: 60px;
     padding: 40px 50px;
+}
+
+.button__choose_work {
+    order: 1;
+}
+
+.button__choose_flud {
+    order: 3;
 }
 
 .button__small {

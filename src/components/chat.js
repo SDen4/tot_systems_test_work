@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 class Chat extends Component {
     render() {
-        // const { work, messages } = this.props;
         const title = this.props.work ? "Работа" : "Болтовня";
         const messagesList = this.props.messages.map( message => 
             <li key={message.id} className="chat__message">{message.message}</li>
@@ -13,6 +12,12 @@ class Chat extends Component {
                 <ul className='chat__wrapper'>
                    {messagesList}
                 </ul>
+                <div className='chat__new_message'>
+                    <input
+                        className='chat__input'
+                        placeholder='Введите сообщение'
+                    ></input>
+                </div>
             </div>
         )
     }

@@ -4,10 +4,11 @@ class Login extends Component {
     render() {
         return (
             <div className='login'>
+                <h1 className="login__title">Planctonics Company Ltd.</h1>
                 <div className='login__block'>
                     <button className='button__login_close'></button>
                     <div className='login__wrapper'>
-                        <div className='login__title'>Authorisation</div>
+                        <div className='login__subtitle'>Авторизация</div>
                         <div className='login__content'>
                             <form 
                                 className='login__form'

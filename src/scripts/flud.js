@@ -14,7 +14,7 @@ export default [
     },{
         id: 983453,
         author: "Kate",
-        message: "Хочу себе новые Эпл Воты",
+        message: "Хочу себе новые Эпл Вотч",
         date: "01.09.2020",
         time: "14:02"
     },{
