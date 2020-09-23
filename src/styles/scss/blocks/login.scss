@@ -8,7 +8,7 @@
 }
 
 .login__title {
-    color: $titleColor;
+    color: $textTitlesMessageColor;
     font-size: $titleFontSize;
     margin-bottom: 50px;
 }
@@ -26,7 +26,7 @@
 
 .login__wrapper {
     width: 70%;
-    height: 80%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +34,7 @@
 }
 
 .login__subtitle {
+    color: $textTitlesMessageColor;
     font-size: $subtitleFontSize;
 }
 
@@ -48,6 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .login__form_data {
@@ -103,7 +105,8 @@
 }
 
 .login__form_input::placeholder {
-    font-size: 12px;
+    color: $textPlasseholderColor;
+    font-size: $baseFontSize;
 }
 
 .login__error {

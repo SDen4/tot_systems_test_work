@@ -1,39 +1,41 @@
-//colors
-$mainBGColor: #FDF5E6;
-$bodyBGColor: #EAD7D5;
-$mainRed: #FF4500;
-$borderRadius: 15px;
+//main colors
+    $mainBGColor: #FDF5E6;
+    $bodyBGColor: #EAD7D5;
+    $mainRed: #FF4500;
 
-$loginWindowBGColor: white;
-$loginWindowBorderColor: gray;
+    $loginWindowBGColor: white;
+    $loginWindowBorderColor: gray;
 
-$textColor: white;
+    $boxShadow: 0 3px 6px rgba(0,0,0,.23), 0 3px 6px rgba(0,0,0,.16);
 
-$buttonBGColor: #C1E2B9;
-$buttonBGColorHover: rgb(66, 190, 42);
-$buttonFontSize: 24px;
+//text colors
+    $textColor: white;
+    $textTitlesMessageColor: #A52A2A;
+    $textPlasseholderColor: #D3D3D3;
 
-$buttonBackBGColor: #D2691E;
-$buttonBackBGColorHover: #A52A2A;
-
-$titleFontSize: 48px;
-$subtitleFontSize: 36px;
-
-$titleColor: #4B0082;
-
-$errorFontSize: 12px;
-
-$boxShadow: 0 3px 6px rgba(0,0,0,.23), 0 3px 6px rgba(0,0,0,.16);
-
-$trahsitionHoverDuration: .3s;
+//buttons colors
+    $buttonBGColor: #C1E2B9;
+    $buttonBGColorHover: rgb(66, 190, 42);
+    $buttonBackBGColor: #D2691E;
+    $buttonBackBGColorHover: #A52A2A;
 
 //fonts
-$mainFont: 'Open Sans', Helvetica, sans-serif;
-$additionalFont: 'Gagalin', sans-serif;
+    $mainFont: 'Open Sans', Helvetica, sans-serif;
+
+//font sizes
+    $titleFontSize: 48px;
+    $subtitleFontSize: 36px;
+    $buttonFontSize: 24px;
+    $baseFontSize: 16px;
+    $errorFontSize: 12px;
+
+//vars
+    $borderRadius: 15px;
+    $trahsitionHoverDuration: .3s;
 
 //resolutions
-$desktop: 1280px;
-$laptop: 980px;
-$tablet: 768px;
-$smartphone: 480px;
-$phone: 320px;
+    $desktop: 1280px;
+    $laptop: 980px;
+    $tablet: 768px;
+    $smartphone: 480px;
+    $phone: 320px;

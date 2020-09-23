@@ -10,6 +10,7 @@
     margin-bottom: 50px;
     //this path just only for displaying on github pages!
     background: linear-gradient(0deg, $loginWindowBGColor,rgba(255,255,255, 0.85) 50%, $loginWindowBGColor), url("https://sden4.github.io/tot_systems_test_work/assets/images/bg2new.png");
+    background-position: center;
 }
 
 .chat__subtitle {
@@ -18,7 +19,9 @@
     margin: 10px 0;
     border-radius: 10px;
     text-align: center;
+    line-height: 42px;
     background-color: $mainBGColor;
+    color: $textTitlesMessageColor;
 }
 
 .chat__messages_list {
@@ -31,12 +34,19 @@
 }
 
 .chat__message {
+    display: flex;
+    flex-direction: column;
     width: fit-content;
     padding: 2px 10px;
     margin: 10px 0;
     border-radius: 5px;
     background-color: $mainBGColor;
     box-shadow: $boxShadow;
+}
+
+.chat_message_author {
+    font-style: italic;
+    color: $textTitlesMessageColor;
 }
 
 .chat__new_message {
@@ -67,6 +77,6 @@
 }
 
 .chat__input::placeholder {
-    font-size: 16px;
-    color: #D3D3D3;
+    font-size: $baseFontSize;
+    color: $textPlasseholderColor;
 }

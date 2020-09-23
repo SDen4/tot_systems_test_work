@@ -5,7 +5,13 @@ class Chat extends Component {
         const title = this.props.work ? "Работа" : "Болтовня";
         const messages = this.props.work ? this.props.messagesWork : this.props.messagesFlud;
         const messagesList = messages.map( message => 
-            <li key={message.id} className="chat__message">{message.message}</li>
+            <li
+                key={message.id}
+                className="chat__message"
+            >
+                <span className="chat_message_author">{message.author}:</span>
+                <span>{message.message}</span>
+            </li>
         );
         return (
             <div className='chat'>

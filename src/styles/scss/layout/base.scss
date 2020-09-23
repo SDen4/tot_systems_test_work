@@ -10,7 +10,7 @@ html {
 body {
   font: {
     family: $mainFont;
-    size: 16px;
+    size: $baseFontSize;
   };
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -17,20 +17,28 @@ class Login extends Component {
                                 <label className='login__form_data'>
                                     <div className='login__form_pic login__form_pic_login'></div>
                                     <div className='login__form_info'>
-                                        <div className='login__form_name'>Login</div>
-                                        <input className='login__form_input' type='text' placeholder='Enter login'></input>
-                                        <div className='login__error'>Enter login</div>
+                                        <div className='login__form_name'>Пользователь</div>
+                                        <input
+                                            className='login__form_input'
+                                            type='text'
+                                            placeholder='Введите имя пользователя'
+                                        ></input>
+                                        <div className='login__error'>Заполните поле "Имя пользователя"</div>
                                     </div>
                                 </label>
                                 <label className='login__form_data'>
                                     <div className='login__form_pic login__form_pic_password'></div>
                                     <div className='login__form_info'>
-                                        <div className='login__form_name'>Password</div>
-                                        <input className='login__form_input' type='password' placeholder='Enter password'></input>
-                                        <div className='login__error'>Enter password</div>
+                                        <div className='login__form_name'>Пароль</div>
+                                        <input
+                                            className='login__form_input'
+                                            type='password'
+                                            placeholder='Введите пароль'
+                                        ></input>
+                                        <div className='login__error'>Заполните поле "Пароль"</div>
                                     </div>
                                 </label>
-                                <button className='button' type='submit'>Enter</button>
+                                <button className='button' type='submit'>Войти</button>
                             </form>
                         </div>
                     </div>
