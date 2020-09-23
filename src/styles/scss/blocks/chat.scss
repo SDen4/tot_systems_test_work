@@ -20,11 +20,15 @@
     background-color: $mainBGColor;
 }
 
-.chat__wrapper {
+.chat__messages_list {
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: 80%;
+    justify-content: flex-start;
+    width: 90%;
+    min-height: 80%;
+    height: 450px;
+    //this path just only for displaying on github pages!
+    background: url("https://sden4.github.io/tot_systems_test_work/assets/images/background1.png");
 }
 
 .chat__message {
@@ -33,12 +37,37 @@
     margin: 10px 0;
     border-radius: 5px;
     background-color: $mainBGColor;
+    box-shadow: $boxShadow;
 }
 
 .chat__new_message {
+    display: flex;
+    justify-content: space-between;
     width: 90%;
     height: 10%;
     border-radius: 10px;
-    border: 1px solid red;
     margin: 10px 0;
+    background-color: $mainBGColor;
+}
+
+.chat__input {
+    width: 90%;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    padding: 12px 8px;
+    background-color: $mainBGColor;
+    border-radius: 10px;
+}
+
+.chat__button_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+}
+
+.chat__input::placeholder {
+    font-size: 16px;
+    color: #D3D3D3;
 }
