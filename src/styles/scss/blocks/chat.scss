@@ -31,6 +31,8 @@
     width: 90%;
     min-height: 80%;
     height: 450px;
+    overflow: auto;
+    visibility: hidden;
 }
 
 .chat__message {
@@ -42,6 +44,12 @@
     border-radius: 5px;
     background-color: $mainBGColor;
     box-shadow: $boxShadow;
+    visibility: visible;
+}
+
+//display scroll on hover
+.chat:hover .chat__messages_list, .chat__messages_list:hover {
+    visibility: visible;
 }
 
 .chat_message_author {
@@ -52,6 +60,7 @@
 .chat__new_message {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
     height: 10%;
     border-radius: 10px;
@@ -64,7 +73,7 @@
     font-size: 16px;
     border: 0;
     outline: none;
-    padding: 12px 8px;
+    padding: 12px 10px;
     background-color: $mainBGColor;
     border-radius: 10px;
 }
@@ -73,7 +82,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8%;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
 
 .chat__input::placeholder {
