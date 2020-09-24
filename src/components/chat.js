@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
 
+
 class Chat extends Component {
+    componentDidMount() {
+        this.scrollToBottom();
+    }
+    
+    componentDidUpdate() {
+        this.scrollToBottom();
+    }
     render() {
         const title = this.props.work ? "Работа" : "Болтовня";
         const messages = this.props.work ? this.props.messagesWork : this.props.messagesFlud;
@@ -18,6 +26,7 @@ class Chat extends Component {
                 <h2 className='chat__subtitle'>{title}</h2>
                 <ul className='chat__messages_list'>
                    {messagesList}
+                    <div ref={(el) => { this.messagesEnd = el; }}></div>
                 </ul>
                 <div className='chat__new_message'>
                     <input
@@ -32,6 +41,9 @@ class Chat extends Component {
                 </div>
             </div>
         )
+    }
+    scrollToBottom = () => {
+        this.messagesEnd.scrollIntoView();
     }
 };
 
