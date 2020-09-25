@@ -28,42 +28,42 @@ export default [
         author: "Mark",
         message: "Возьми Сяоми",
         date: "01.09.2020",
-        time: "14:03"
+        time: "14:04"
     },{
         id: 983456,
         author: "Mark",
         message: "Возьми Сяоми",
         date: "01.09.2020",
-        time: "14:03"
+        time: "14:05"
     },{
         id: 983457,
         author: "Mark",
         message: "Возьми Сяоми",
         date: "01.09.2020",
-        time: "14:03"
+        time: "14:06"
     },{
         id: 983458,
         author: "Mark",
         message: "Возьми Сяоми",
         date: "01.09.2020",
-        time: "14:03"
+        time: "14:07"
     },{
         id: 983459,
         author: "Mark",
         message: "Возьми Сяоми",
         date: "01.09.2020",
-        time: "14:03"
+        time: "14:08"
     },{
         id: 983460,
         author: "Mark",
         message: "Возьми Сяоми",
         date: "01.09.2020",
-        time: "14:03"
+        time: "14:08"
     },{
         id: 983461,
         author: "Mark",
         message: "Возьми Сяоми",
         date: "01.09.2020",
-        time: "14:03"
+        time: "14:09"
     }
 ]

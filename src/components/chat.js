@@ -23,7 +23,9 @@ class Chat extends Component {
         );
         return (
             <div className='chat'>
-                <h2 className='chat__subtitle'>{title}</h2>
+                <h2
+                    className={`${this.props.work ? 'chat__subtitle chat__subtitle_work' : 'chat__subtitle chat__subtitle_flud'}`}
+                >{title}</h2>
                 <ul className='chat__messages_list'>
                    {messagesList}
                     <div ref={(el) => { this.messagesEnd = el; }}></div>

@@ -20,8 +20,15 @@
     border-radius: 10px;
     text-align: center;
     line-height: 42px;
-    background-color: $mainBGColor;
     color: $textTitlesMessageColor;
+}
+
+.chat__subtitle_work {
+    background-color: $chatTitleWorkBGColor;
+}
+
+.chat__subtitle_flud {
+    background-color: $chatTitleFludBGColor;
 }
 
 .chat__messages_list {
