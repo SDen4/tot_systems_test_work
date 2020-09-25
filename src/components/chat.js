@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Message from './message';
 
 
 class Chat extends Component {
@@ -13,13 +14,7 @@ class Chat extends Component {
         const title = this.props.work ? "Работа" : "Болтовня";
         const messages = this.props.work ? this.props.messagesWork : this.props.messagesFlud;
         const messagesList = messages.map( message => 
-            <li
-                key={message.id}
-                className="chat__message"
-            >
-                <span className="chat_message_author">{message.author}:</span>
-                <span>{message.message}</span>
-            </li>
+            <Message message={message}/>
         );
         return (
             <div className='chat'>
