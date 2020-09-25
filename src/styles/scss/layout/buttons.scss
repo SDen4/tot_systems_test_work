@@ -37,7 +37,7 @@
 .button__exit_mod {
     margin: 0 30px;
     animation-direction: alternate;
-    animation: anime 1s;
+    animation: animationMargin $animationDuration;
 }
 
 .button__exit_mod ~ .button__choose {
@@ -49,7 +49,7 @@
     display: none;
 }
 
-@keyframes anime {
+@keyframes animationMargin {
     from {margin-top: 300px}
     to {margin-top: 0px}
 }

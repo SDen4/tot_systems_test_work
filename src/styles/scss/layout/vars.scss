@@ -18,7 +18,7 @@
 //buttons colors
     $buttonBGColor: #C1E2B9;
     $buttonBGColorHover: rgb(66, 190, 42);
-    $buttonBackBGColor: #D2691E;
+    $buttonBackBGColor: lightsalmon;
     $buttonBackBGColorHover: #A52A2A;
 
 //fonts
@@ -34,6 +34,7 @@
 //vars
     $borderRadius: 15px;
     $trahsitionHoverDuration: .3s;
+    $animationDuration: 1s;
 
 //resolutions
     $desktop: 1280px;

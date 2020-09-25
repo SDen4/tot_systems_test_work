@@ -17,10 +17,10 @@
 
 .choose__content_mod {
     height: 50px;
-    animation: anime2 1s;
+    animation: animationHeight $animationDuration;
 }
 
-@keyframes anime2 {
+@keyframes animationHeight {
     from {height: 250px;}
     to {height: 50px;}
 }
