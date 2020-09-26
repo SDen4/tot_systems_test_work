@@ -11,7 +11,13 @@
     margin: 10px auto 10px 10px;
 }
 
-.message_author {
+.message__author {
     font-style: italic;
     color: $textTitlesMessageColor;
+}
+
+.message__time {
+    font-size: $messageTimeFontSize;
+    color: $textPlasseholderColor;
+    text-align: right;
 }
