@@ -11,6 +11,7 @@
     //this path just only for displaying on github pages!
     background: linear-gradient(0deg, $loginWindowBGColor,rgba(255,255,255, 0.85) 50%, $loginWindowBGColor), url("https://sden4.github.io/tot_systems_test_work/assets/images/bg2new.png");
     background-position: center;
+    position: relative;
 }
 
 .chat__subtitle {

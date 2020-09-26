@@ -34,6 +34,13 @@
     }
 }
 
+.button__cansel {
+    background-color: $buttonBackBGColor;
+    &:hover {
+        background-color: $buttonBackBGColorHover;
+    }
+}
+
 .button__exit_mod {
     margin: 0 30px;
     animation-direction: alternate;

@@ -7,7 +7,8 @@ class NewMessage extends Component {
         message: '',
         date: '',
         time: '',
-        author: "test"
+        author: "test",
+        removable: true
     }
     render() {
         return (
@@ -78,7 +79,7 @@ class NewMessage extends Component {
     }
     clearNewMessage = () => {
         this.setState({
-            message: '',
+            id: '',
             message: '',
             date: '',
             time: '',
@@ -88,10 +89,19 @@ class NewMessage extends Component {
         event.preventDefault();
         //don't send empty messages
         if(!this.state.message) return;
-        console.log('New message!');
-        console.log(this.state.message);
-        console.log(this.state.id);
-        this.props.sendNewObject(this.state);
+        
+        const newObject={};
+        newObject.id = this.state.id;
+        newObject.message = this.state.message;
+        newObject.date = this.state.date;
+        newObject.time = this.state.time;
+        newObject.author = this.state.author;
+        newObject.removable = this.state.removable;
+
+        console.log(newObject);
+        
+        // this.props.sendNewObject(this.state);
+        this.props.sendNewObject(newObject);
         this.clearNewMessage();
     }
 }
