@@ -1,0 +1,31 @@
+.delete__confirm {
+    background-color: $confirmDeleteMessageBGColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    border-radius: $borderRadius;
+    z-index: 10;
+}
+
+.delete__confirm_text {
+    width: 80%;
+    text-align: center;
+    font-size: $buttonFontSize;
+    color: $textTitlesMessageColor;
+    margin-bottom: 50px;
+    overflow-wrap: break-word;
+}
+
+.delete__confirm_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+}

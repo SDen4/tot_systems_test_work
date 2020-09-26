@@ -4,9 +4,11 @@ class Login extends Component {
     render() {
         return (
             <div className='login'>
-                <h1 className="login__title">Planctonics Company Ltd.</h1>
+                <h1 className='login__title'>Planctonics Company Ltd.</h1>
                 <div className='login__block'>
-                    <button className='button__login_close'></button>
+                    <button className='button__cross button__cross_login'>
+                        <div className='button__cross_segment button__cross_segment_login'></div>
+                    </button>
                     <div className='login__wrapper'>
                         <div className='login__subtitle'>Авторизация</div>
                         <div className='login__content'>
@@ -23,7 +25,7 @@ class Login extends Component {
                                             type='text'
                                             placeholder='Введите имя пользователя'
                                         ></input>
-                                        <div className='login__error'>Заполните поле "Имя пользователя"</div>
+                                        <div className='login__error'>Заполните поле 'Имя пользователя'</div>
                                     </div>
                                 </label>
                                 <label className='login__form_data'>
@@ -35,7 +37,7 @@ class Login extends Component {
                                             type='password'
                                             placeholder='Введите пароль'
                                         ></input>
-                                        <div className='login__error'>Заполните поле "Пароль"</div>
+                                        <div className='login__error'>Заполните поле 'Пароль'</div>
                                     </div>
                                 </label>
                                 <button className='button' type='submit'>Войти</button>

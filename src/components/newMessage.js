@@ -7,7 +7,7 @@ class NewMessage extends Component {
         message: '',
         date: '',
         time: '',
-        author: "test",
+        author: 'test',
         removable: true
     }
     render() {
@@ -22,12 +22,12 @@ class NewMessage extends Component {
                     value={this.state.message}
                     onChange={this.handleChange}
                 ></input>
-                <div className="chat__button_wrapper">
+                <div className='chat__button_wrapper'>
                     <button
-                        className="button__send_message"
-                        type="submit"
+                        className='button__send_message'
+                        type='submit'
                     >
-                        <div className="button__send_message_triangle"></div>
+                        <div className='button__send_message_triangle'></div>
                     </button>
                 </div>
             </form>
@@ -87,21 +87,11 @@ class NewMessage extends Component {
     }
     addNewMessage = (event) => {
         event.preventDefault();
+
         //don't send empty messages
         if(!this.state.message) return;
-        
-        const newObject={};
-        newObject.id = this.state.id;
-        newObject.message = this.state.message;
-        newObject.date = this.state.date;
-        newObject.time = this.state.time;
-        newObject.author = this.state.author;
-        newObject.removable = this.state.removable;
 
-        console.log(newObject);
-        
-        // this.props.sendNewObject(this.state);
-        this.props.sendNewObject(newObject);
+        this.props.sendNewObject(this.state);
         this.clearNewMessage();
     }
 }

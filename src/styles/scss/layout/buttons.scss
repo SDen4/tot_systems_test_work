@@ -1,5 +1,4 @@
 .button {
-    cursor: pointer;
     outline: none;
     padding: 10px 25px;
     font-size: $buttonFontSize;
@@ -11,18 +10,6 @@
     &:hover {
         background-color: $buttonBGColorHover;
     }
-}
-
-.button__login_close {
-    width: 22PX;
-    height: 22PX;
-    border: 0;
-    outline: none;
-    background: url("https://sden4.github.io/tot_systems_test_work/assets/images/Cross.svg");
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
 }
 
 .button__exit {
@@ -105,4 +92,47 @@
             border: 2px solid $buttonBGColorHover;
         }
     }
+}
+
+.button__cross {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    outline: none;
+    &:hover .button__cross_segment {
+        background-color: $buttonBackBGColorHover;
+    }
+}
+
+.button__cross_segment {
+    width: 2px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: $textPlasseholderColor;
+    position: relative;
+    transform: rotate(45deg);
+    transition: $trahsitionHoverDuration;
+    &:after {
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: inherit;
+        transform: rotate(90deg);
+    }
+}
+
+.button__cross_login {
+    width: 22PX;
+    height: 22PX;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.button__cross_segment_login {
+    width: 4px;
+    height: 22px;
 }

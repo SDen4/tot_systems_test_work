@@ -18,7 +18,7 @@ class Chat extends Component {
         this.scrollToBottom();
     }
     render() {
-        let title = this.props.work ? "Работа" : "Болтовня";
+        let title = this.props.work ? 'Работа' : 'Болтовня';
         let messages = this.props.work ? this.state.messagesStateWork : this.state.messagesStateFlud;
         let messagesList = messages.map( message => 
             <Message
