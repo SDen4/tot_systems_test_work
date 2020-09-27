@@ -9,7 +9,7 @@ export default [
     },{
         id: 983452,
         author: "John",
-        message: "Скукотень...",
+        message: "Скукотень... Предалагю вашему вниманию новый продукт от Сяоми. Супер-мега бэнд. Меряет все на свете, стоит 10 баксов на Али, да и вообще выглядит неплохо. Посмотри, ссылка: https://link.com/megalonglinkfortestlongwordsinthischat&megalonglinkfortestlongwordsinthischat&megalonglinkfortestlongwordsinthischat&megalonglinkfortestlongwordsinthischat&megalonglinkfortestlongwordsinthischat",
         date: "01.09.2020",
         time: "14:01",
         removable: false
@@ -29,50 +29,50 @@ export default [
         removable: false
     },{
         id: 983455,
-        author: "Mark",
-        message: "Возьми Сяоми",
+        author: "Boss",
+        message: "Да, норм аппарат",
         date: "01.09.2020",
         time: "14:04",
         removable: false
     },{
         id: 983456,
-        author: "Mark",
-        message: "Возьми Сяоми",
+        author: "Boss",
+        message: "МОжно будет организовать скидку",
         date: "01.09.2020",
         time: "14:05",
         removable: false
     },{
         id: 983457,
-        author: "Mark",
-        message: "Возьми Сяоми",
+        author: "Kate",
+        message: "Не, я топлю только за яблочко",
         date: "01.09.2020",
         time: "14:06",
         removable: false
     },{
         id: 983458,
-        author: "Mark",
-        message: "Возьми Сяоми",
+        author: "Boss",
+        message: "Ну, на вкус и цвет, как говорится...",
         date: "01.09.2020",
         time: "14:07",
         removable: false
     },{
         id: 983459,
         author: "Mark",
-        message: "Возьми Сяоми",
+        message: "Все фломастеры разные?",
         date: "01.09.2020",
         time: "14:08",
         removable: false
     },{
         id: 983460,
-        author: "Mark",
-        message: "Возьми Сяоми! Возьми Сяоми! Возьми Сяоми! Возьми Сяоми! Возьми Сяоми! Возьми Сяоми! Возьми Сяоми! Возьми Сяоми! Возьми Сяоми!",
+        author: "Boss",
+        message: "Да, типа того...",
         date: "01.09.2020",
         time: "14:08",
         removable: false
     },{
         id: 983461,
         author: "Mark",
-        message: "Возьми Сяоми",
+        message: "Ну возьми Сяоми)))",
         date: "01.09.2020",
         time: "14:09",
         removable: false

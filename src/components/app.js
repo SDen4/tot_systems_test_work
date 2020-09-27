@@ -11,7 +11,7 @@ class App extends Component {
         loginName: ''
     }
     render() {
-        const login = this.state.login && <Login enter={this.enter} loginName={this.loginName}/>
+        const login = this.state.login && <Login enter={this.enter} loginName={this.loginName} backToButton={this.comeToButton}/>
         const choose = this.state.choose && <Choose backToLogin={this.enter} login={this.state.loginName}/>
         return (
             <div className='main'>

@@ -11,6 +11,12 @@
     color: $textTitlesMessageColor;
     font-size: $titleFontSize;
     margin-bottom: 50px;
+    line-height: $titleFontSize;
+    @include laptop {
+        @include smartphoneGRZ {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .choose__grit_unactive {
@@ -21,13 +27,23 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 35%;
-    height: 250px;
+    @include laptop {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .choose__content_mod {
     height: 50px;
     animation: animationHeight $animationDuration;
+    @include laptop {
+        @include smartphoneGRZ {
+            flex-direction: row;
+        }
+    }
+    @include tablet {
+        flex-direction: row;
+    }
 }
 
 @keyframes animationHeight {

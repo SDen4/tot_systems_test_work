@@ -19,6 +19,15 @@
     &:hover {
         background-color: $buttonBackBGColorHover;
     }
+    @include laptop {
+        order: 3;
+        margin-top: 50px;
+    }
+    @include laptop {
+        @include smartphoneGRZ {
+            margin-top: unset;
+        }
+    }
 }
 
 .button__cansel {
@@ -32,10 +41,18 @@
     margin: 0 30px;
     animation-direction: alternate;
     animation: animationMargin $animationDuration;
+    @include laptop {
+        @include smartphoneGRZ {
+            margin-bottom: 15px;
+        }
+    }
+    @include smartphone {
+        margin: 0 10px;
+    }
 }
 
 .button__exit_mod ~ .button__choose {
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-size: $buttonFontSize;
 }
 
@@ -49,16 +66,69 @@
 }
 
 .button__choose {
-    font-size: 60px;
+    font-size: $bigButtons;
     padding: 40px 50px;
+    @include laptop {
+        @include smartphoneGRZ {
+            padding: 20px 50px;
+        }
+    }
+    @include tablet {
+        @include additionalGRZ {
+            font-size: $titleFontSize;
+        }
+        @include phoneGRZ {
+            padding: 12px 50px;
+            font-size: $titleFontSize;
+        }
+    }
+    @include smartphone {
+        padding: 30px 15px;
+    }
+    @include phone {
+        font-size: $titleFontSize;
+    }
 }
 
 .button__choose_work {
     order: 1;
+    margin-bottom: 40px;
+    @include laptop {
+        @include smartphoneGRZ {
+            margin-bottom: 15px;
+        }
+    }
+    @include smartphone {
+        margin-bottom: 20px;
+    }
+}
+
+.button__exit_mod + .button__choose_work {
+    @include tablet {
+        margin-bottom: 0;
+        @include smartphoneGRZ {
+            margin-bottom: 15px;
+        }
+    }
 }
 
 .button__choose_flud {
     order: 3;
+    @include laptop {
+        order: 2;
+        @include smartphoneGRZ {
+            margin-bottom: 15px;
+        }
+    }
+    @include smartphone {
+        margin-bottom: 0px;
+    }
+}
+
+.button__exit_mod + .button__choose_flud {
+    @include tablet {
+        margin-bottom: 0;
+    }
 }
 
 .button__send_message {

@@ -9,14 +9,11 @@ class Login extends Component {
         errorLogin: false,
         errorPassword: false
     }
-    render() {
+    render() { 
         return (
             <div className='login'>
-                <h1 className='login__title'>Planctonics Company Ltd.</h1>
+                <h1 className='login__title'>Planctonics Company Ltd</h1>
                 <div className='login__block'>
-                    <button className='button__cross button__cross_login'>
-                        <div className='button__cross_segment button__cross_segment_login'></div>
-                    </button>
                     <div className='login__wrapper'>
                         <div className='login__subtitle'>Авторизация</div>
                         <div className='login__content'>

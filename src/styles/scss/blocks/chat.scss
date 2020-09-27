@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 80%;
+    max-width: 1280px;
     min-height: 60vh;
     border: 1px solid $loginWindowBorderColor;
     border-radius: $borderRadius;
@@ -12,7 +13,12 @@
     background: linear-gradient(0deg, $loginWindowBGColor,rgba(255,255,255, 0.85) 50%, $loginWindowBGColor), url('https://sden4.github.io/tot_systems_test_work/assets/images/bg2new.png');
     background-position: center;
     position: relative;
+    @include smartphone {
+        width: 98%;
+        margin-bottom: 5px;
+    }
 }
+
 
 .chat__subtitle {
     width: 90%;
@@ -41,6 +47,11 @@
     height: 450px;
     overflow: auto;
     visibility: hidden;
+    @include desktop {
+        @include additionalBigGRZ {
+            height: 675px;
+        }
+    }
 }
 
 //display scroll on hover

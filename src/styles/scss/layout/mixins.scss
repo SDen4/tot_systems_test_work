@@ -27,3 +27,27 @@
       @content;
     }
   }
+
+  @mixin smartphoneGRZ() {
+    @media screen and (max-height: $smartphone) {
+      @content;
+    }
+  }
+
+  @mixin additionalGRZ() {
+    @media screen and (max-height: $additional) {
+      @content;
+    }
+  }
+
+  @mixin phoneGRZ() {
+    @media screen and (max-height: $phone) {
+      @content;
+    }
+  }
+
+  @mixin additionalBigGRZ() {
+    @media screen and (min-height: $desktop) {
+      @content;
+    }
+  }

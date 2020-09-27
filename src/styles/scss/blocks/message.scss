@@ -9,6 +9,9 @@
     visibility: visible;
     //fix problem of width fit-content in IE
     margin: 10px auto 10px 10px;
+    @include smartphone {
+        max-width: 93%;
+    }
 }
 
 .message__up {
@@ -20,6 +23,7 @@
 .message__author {
     font-style: italic;
     color: $textTitlesMessageColor;
+    margin-right: 20px;
 }
 
 .message__message {
