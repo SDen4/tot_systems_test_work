@@ -31,7 +31,7 @@ class Login extends Component {
                                             placeholder='Введите имя пользователя'
                                             name='login'
                                             value={this.state.login}
-                                            onChange={this.handleChange}
+                                            onChange={this.handleChangeLogin}
                                         ></input>
                                         <div className={`${this.state.errorLogin ? 'login__error' : 'login__error_unactive'}`}>
                                             Заполните поле 'Имя пользователя'
@@ -48,7 +48,7 @@ class Login extends Component {
                                             placeholder='Введите пароль'
                                             name='password'
                                             value={this.state.password}
-                                            onChange={this.handleChange}
+                                            onChange={this.handleChangePassword}
                                         ></input>
                                         <div className={`${this.state.errorPassword ? 'login__error' : 'login__error_unactive'}`}>
                                             Заполните поле 'Пароль'
@@ -64,23 +64,29 @@ class Login extends Component {
         );
     }
 
-    handleChange = (event) => {
-        let name = event.target.name;
-        let value = event.target.value;
+    handleChangeLogin = (event) => {
         this.setState({
-            [name]: value
-        })
-        this.validation();
+            login: event.target.value
+        }, this.validationLogin)
     }
 
-    validation = () => {
-        // validation login//
+    handleChangePassword = (event) => {
+        this.setState({
+            password: event.target.value
+        }, this.validationPassword)
+    }
+
+    // validation login //
+    validationLogin = () => {
         if (!this.state.login) {
             this.setState({errorLogin: true});
         } else {
             this.setState({errorLogin: false});
         }
-        // validation password//
+    }
+
+    // validation password //
+    validationPassword = () => {
         if (!this.state.password) {
             this.setState({errorPassword: true});
         } else {
@@ -88,12 +94,13 @@ class Login extends Component {
         }
     }
 
+    // authorisation //
+    // it's just an imitation of authorisation!!!
+    // for demo version!!!
     enter = (event) => {
         event.preventDefault();
-        this.validation();
-        // authorisation //
-        // it's just an imitation of authorisation!!!
-        // for demo version!!!
+        this.validationLogin();
+        this.validationPassword();
         if(this.state.login !== authorisation.login || this.state.password !== authorisation.password) return;
         this.props.enter();
         this.props.loginName(authorisation.login);
