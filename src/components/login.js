@@ -7,9 +7,13 @@ class Login extends Component {
         login: '',
         password: '',
         errorLogin: false,
-        errorPassword: false
+        errorPassword: false,
+        errorBoth: false
     }
-    render() { 
+    render() {
+        const errorBoth = this.state.errorBoth && <div className= 'login__error_uncorrect_both'>
+                Не верный логин или пароль
+            </div>
         return (
             <div className='login'>
                 <h1 className='login__title'>Planctonics Company Ltd</h1>
@@ -35,6 +39,7 @@ class Login extends Component {
                                         </div>
                                     </div>
                                 </label>
+                                {errorBoth}
                                 <label className='login__form_data'>
                                     <div className='login__form_pic login__form_pic_password'></div>
                                     <div className='login__form_info'>
@@ -79,6 +84,7 @@ class Login extends Component {
             this.setState({errorLogin: true});
         } else {
             this.setState({errorLogin: false});
+            this.setState({errorBoth: false});
         }
     }
 
@@ -88,19 +94,35 @@ class Login extends Component {
             this.setState({errorPassword: true});
         } else {
             this.setState({errorPassword: false});
+            this.setState({errorBoth: false});
         }
+    }
+
+    // validation both //
+    validationBoth = () => {
+        if(this.state.login === '' || this.state.password === '') return;
+        if(this.state.login !== authorisation.login || this.state.password !== authorisation.password) {
+            this.setState({errorBoth: true});
+        };
     }
 
     // authorisation //
     // it's just an imitation of authorisation!!!
     // for demo version!!!
     enter = (event) => {
+        console.log('login: ' + this.state.login);
+        console.log('passw: ' + this.state.password);
+        console.log('both: ' + this.state.errorBoth);
+
         event.preventDefault();
+
         this.validationLogin();
         this.validationPassword();
-        if(this.state.login !== authorisation.login || this.state.password !== authorisation.password) return;
-        this.props.enter();
-        this.props.loginName(authorisation.login);
+        this.validationBoth();
+        if(this.state.login === authorisation.login && this.state.password === authorisation.password) {
+            this.props.enter();
+            this.props.loginName(authorisation.login);
+        };
     }
 };
 
