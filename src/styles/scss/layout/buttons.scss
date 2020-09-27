@@ -136,3 +136,25 @@
     width: 4px;
     height: 22px;
 }
+
+.button__edit {
+    margin-left: 2px;
+    &:hover .button__edit_segment {
+        background-color: $buttonBGColorHover;
+    }
+}
+
+.button__edit_segment {
+    &:after {
+        width: 2px;
+        height: 5px;
+        border-radius: inherit;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: -2px;
+        background-color: inherit;
+        transform: rotate(90deg);
+    }
+}

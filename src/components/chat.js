@@ -25,6 +25,7 @@ class Chat extends Component {
                 message={message}
                 key={message.id}
                 deleteMessage={() => this.deleteMessage(message.id)}
+                sendEditedMessage={this.receiveEditedMessage}
             />
         );
         return (
@@ -76,6 +77,21 @@ class Chat extends Component {
                 messagesStateFlud: newMessageListFlud
             })
             console.log(this.state.messagesStateFlud);
+        }
+    }
+    receiveEditedMessage = (text, id) => {
+        if(this.props.work) {
+            this.state.messagesStateWork.map(message => {
+                if(message.id === id) {
+                    message.message = text;
+                };
+            })
+        } else {
+            this.state.messagesStateFlud.map(message => {
+                if(message.id === id) {
+                    message.message = text;
+                };
+            })
         }
     }
 };
