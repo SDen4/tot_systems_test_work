@@ -7,6 +7,16 @@
     min-height: 100vh;
 }
 
+.choose__grit {
+    color: $textTitlesMessageColor;
+    font-size: $titleFontSize;
+    margin-bottom: 50px;
+}
+
+.choose__grit_unactive {
+    display: none
+}
+
 .choose__content {
     display: flex;
     justify-content: center;

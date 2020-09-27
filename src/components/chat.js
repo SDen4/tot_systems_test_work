@@ -41,6 +41,7 @@ class Chat extends Component {
                     messagesStateWork={this.state.messagesStateWork}
                     messagesStateFlud={this.state.messagesStateFlud}
                     work={this.props.work}
+                    login={this.props.login}
                 />
             </div>
         )

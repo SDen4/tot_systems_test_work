@@ -7,7 +7,7 @@ class NewMessage extends Component {
         message: '',
         date: '',
         time: '',
-        author: 'test',
+        author: this.props.login,
         removable: true
     }
     render() {
@@ -18,7 +18,7 @@ class NewMessage extends Component {
             >
                 <input
                     className='chat__input'
-                    placeholder='Введите сообщение'
+                    placeholder={`${this.props.login}, введите сообщение`}
                     value={this.state.message}
                     onChange={this.handleChange}
                 ></input>
@@ -54,6 +54,7 @@ class NewMessage extends Component {
             })
         };
     }
+
     createNewDateAndTime = () => {
         let current = new Date();
 
@@ -77,18 +78,20 @@ class NewMessage extends Component {
             time: totalTime
         })
     }
+
     clearNewMessage = () => {
         this.setState({
             id: '',
             message: '',
             date: '',
-            time: '',
+            time: ''
         })
     }
+
     addNewMessage = (event) => {
         event.preventDefault();
 
-        //don't send empty messages
+        // don't send empty messages! //
         if(!this.state.message) return;
 
         this.props.sendNewObject(this.state);
