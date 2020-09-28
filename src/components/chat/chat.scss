@@ -57,3 +57,26 @@
 .chat:hover .chat__messages_list, .chat__messages_list:hover {
     visibility: visible;
 }
+
+// scroll style for chrome, yandex, safari, opera
+.chat__subtitle_flud + ::-webkit-scrollbar {
+    width: $scrollWidth;
+    background-color: $buttonBGColor;
+    border-radius: $scrollThumbRadius;
+}
+
+.chat__subtitle_flud + ::-webkit-scrollbar-thumb {
+    background-color: $buttonBGColorHover;
+    border-radius: $scrollThumbRadius;
+}
+
+.chat__subtitle_work + ::-webkit-scrollbar {
+    width: $scrollWidth;
+    background-color: $buttonBackBGColor;
+    border-radius: $scrollThumbRadius;
+}
+
+.chat__subtitle_work + ::-webkit-scrollbar-thumb {
+    background-color: $buttonBackBGColorHover;
+    border-radius: $scrollThumbRadius;
+}

@@ -10,6 +10,9 @@
     &:hover {
         background-color: $buttonBGColorHover;
     }
+
+    //delete blue mark of tap in mobile version
+    -webkit-tap-highlight-color: transparent
 }
 
 .button__exit {
