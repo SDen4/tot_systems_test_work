@@ -9,17 +9,28 @@ body {
   };
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  // overflow: hidden;
-  background-color: $mainBGColor;
+
   margin: 0;
   min-height: 100vh;
+
+  overflow: hidden;
+  @include desktop {
+    overflow: auto;
+  }
+
+  background-color: $bodyBGColor;
+  background-image: $bodyBGImage;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 button {
   border: 0;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -63,9 +74,4 @@ img {
 
 input {
   font-size: $buttonFontSize;
-}
-
-#root {
-  width: 100%;
-  min-height: 100vh;
 }

@@ -1,13 +1,18 @@
-//main colors
+// colors & BG
     $mainBGColor: #FDF5E6;
-    $bodyBGColor: #EAD7D5;
+    $bodyBGColor: #68b8dd;;
+    $bodyBGImage: url("https://sden4.github.io/tot_systems_test_work/assets/images/mainBG.jpg");
     $confirmDeleteMessageBGColor: rgba(234, 215, 213, .97);
     $mainRed: #FF4500;
     $chatTitleWorkBGColor: lightsalmon;
-    $chatTitleFludBGColor: #C1E2B9;
+    $chatTitleFludBGColor: #AFF0BB;
 
     $loginWindowBGColor: white;
-    $loginWindowBorderColor: gray;
+    //this path just only for displaying on github pages!
+    $loginPicLogin: url("https://sden4.github.io/tot_systems_test_work/assets/images/user.svg");
+    //this path just only for displaying on github pages!
+    $loginPicPassword: url("https://sden4.github.io/tot_systems_test_work/assets/images/key4.svg");
+    $liginWindowBGGradient: radial-gradient(transparent 20%, #fff 100%);
 
     $boxShadow: 0 3px 6px rgba(0,0,0,.23), 0 3px 6px rgba(0,0,0,.16);
 
@@ -17,7 +22,7 @@
     $textPlasseholderColor: #D3D3D3;
 
 //buttons colors
-    $buttonBGColor: #C1E2B9;
+    $buttonBGColor: #AFF0BB;
     $buttonBGColorHover: rgb(66, 190, 42);
     $buttonBackBGColor: lightsalmon;
     $buttonBackBGColorHover: #A52A2A;

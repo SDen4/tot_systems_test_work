@@ -83,10 +83,8 @@
         }
     }
     @include smartphone {
-        padding: 30px 15px;
-    }
-    @include phone {
         font-size: $titleFontSize;
+        padding: 30px 15px;
     }
 }
 
@@ -104,7 +102,7 @@
 }
 
 .button__exit_mod + .button__choose_work {
-    @include tablet {
+    @include laptop {
         margin-bottom: 0;
         @include smartphoneGRZ {
             margin-bottom: 15px;

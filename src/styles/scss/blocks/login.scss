@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    background: $liginWindowBGGradient;
 }
 
 .login__title {
@@ -130,13 +131,11 @@
 }
 
 .login__form_pic_login {
-    //this path just only for displaying on github pages!
-    background: url("https://sden4.github.io/tot_systems_test_work/assets/images/user.svg");
+    background: $loginPicLogin;
 }
 
 .login__form_pic_password {
-    //this path just only for displaying on github pages!
-    background: url("https://sden4.github.io/tot_systems_test_work/assets/images/key4.svg");
+    background: $loginPicPassword;
 }
 
 .login__form_info {
