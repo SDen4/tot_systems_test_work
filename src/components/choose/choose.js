@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import messagesFlud from '../scripts/flud';
-import messagesWork from '../scripts/work';
+import messagesFlud from '../../scripts/flud';
+import messagesWork from '../../scripts/work';
 
-import Chat from './chat';
+import Chat from '../chat/chat';
 
 class Choose extends Component {
     state = {

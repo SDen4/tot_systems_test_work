@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import authorisation from '../scripts/authorisation';
+import authorisation from '../../scripts/authorisation';
 
 
 class Login extends Component {

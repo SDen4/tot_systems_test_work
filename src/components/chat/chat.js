@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Message from './message';
-import NewMessage from './newMessage';
+import Message from '../message/message';
+import NewMessage from '../newMessage/newMessage';
 
 
 class Chat extends Component {

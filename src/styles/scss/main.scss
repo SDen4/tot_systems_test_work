@@ -5,10 +5,9 @@
 @import './layout/base.scss';
 @import './layout/buttons.scss';
 
-
-@import './blocks/app.scss';
-@import './blocks/login.scss';
-@import './blocks/choose.scss';
-@import './blocks/chat.scss';
-@import './blocks/message.scss';
-@import './blocks/deleteMessage.scss';
+@import '../../components/app/app.scss';
+@import '../../components/login/login.scss';
+@import '../../components/chat/chat.scss';
+@import '../../components/choose/choose.scss';
+@import '../../components/message/message.scss';
+@import '../../components/deleteMessage/deleteMessage.scss';

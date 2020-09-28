@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import DeleteMessage from './deleteMessage';
+import DeleteMessage from '../deleteMessage/deleteMessage';
 
 
 class Message extends Component {

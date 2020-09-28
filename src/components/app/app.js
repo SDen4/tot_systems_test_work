@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import Login from './login';
-import Choose from './choose';
+import Login from '../login/login';
+import Choose from '../choose/choose';
 
 
 class App extends Component {
