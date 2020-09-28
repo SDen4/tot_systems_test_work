@@ -7,8 +7,10 @@
     background-color: $mainBGColor;
     box-shadow: $boxShadow;
     visibility: visible;
-    //fix problem of width fit-content in IE
+
+    // fix problem of width fit-content in IE
     margin: 10px auto 10px 10px;
+
     @include smartphone {
         max-width: 93%;
     }

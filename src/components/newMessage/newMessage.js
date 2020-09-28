@@ -13,16 +13,16 @@ class NewMessage extends Component {
     render() {
         return (
             <form
-                className='chat__new_message'
+                className='newMessage'
                 onSubmit={this.addNewMessage}
             >
                 <input
-                    className='chat__input'
+                    className='newMessage__input'
                     placeholder={`${this.props.login}, введите сообщение`}
                     value={this.state.message}
                     onChange={this.handleChange}
                 ></input>
-                <div className='chat__button_wrapper'>
+                <div className='newMessage__button_wrapper'>
                     <button
                         className='button__send_message'
                         type='submit'

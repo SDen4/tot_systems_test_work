@@ -62,22 +62,19 @@ class Message extends Component {
     this.setState({
       deleteMessageState: false,
       deleteIdMessage: null
-    })
+    });
   }
   handleEditMessage = (event) => {
     this.setState({
       editedText: event.target.value
-    })
+    });
   }
   editMessage = (id) => {
-    console.log(id);
     this.setState({
       editMessageState: !this.state.editMessageState
-    })
-
+    });
     if(this.state.editMessageState) {
       this.props.sendEditedMessage(this.state.editedText, id);
-      console.log('sending ' + this.state.editedText + ' ' + id);
     };
 
   }

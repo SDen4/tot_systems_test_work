@@ -9,7 +9,7 @@
     border-radius: $borderRadius;
     margin-bottom: 50px;
     //this path just only for displaying on github pages!
-    background: linear-gradient(0deg, $loginWindowBGColor,rgba(255,255,255, 0.85) 50%, $loginWindowBGColor), url('https://sden4.github.io/tot_systems_test_work/assets/images/bg2new.png');
+    background: $chatBGGradient, $chatBGImage;
     background-position: center;
     position: relative;
     @include smartphone {
@@ -56,42 +56,4 @@
 //display scroll on hover
 .chat:hover .chat__messages_list, .chat__messages_list:hover {
     visibility: visible;
-}
-
-.chat__new_message {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 10%;
-    border-radius: 10px;
-    margin: 10px 0;
-    background-color: $mainBGColor;
-}
-
-.chat__input {
-    width: 90%;
-    border: 0;
-    outline: none;
-    padding: 12px 10px;
-    background-color: $mainBGColor;
-    border-radius: 10px;
-    font: {
-        size: $baseFontSize;
-        family: $mainFont;
-    }
-}
-
-.chat__button_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.chat__input::placeholder {
-    font-size: $baseFontSize;
-    color: $textPlasseholderColor;
 }

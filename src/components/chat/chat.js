@@ -48,15 +48,10 @@ class Chat extends Component {
         )
     }
     addNewMessage = (obj) => {
-        console.log(obj);
         if(this.props.work) {
-            console.log(this.state.messagesStateWork);
-            this.setState({ messagesStateWork: [ ...this.state.messagesStateWork, obj]})
-            console.log(this.state.messagesStateWork);
+            this.setState({ messagesStateWork: [ ...this.state.messagesStateWork, obj] });
         } else {
-            console.log(this.state.messagesStateFlud);
-            this.setState({ messagesStateFlud: [ ...this.state.messagesStateFlud, obj]})
-            console.log(this.state.messagesStateFlud);
+            this.setState({ messagesStateFlud: [ ...this.state.messagesStateFlud, obj] });
         }
     }
     scrollToBottom = () => {
@@ -64,19 +59,11 @@ class Chat extends Component {
     }
     deleteMessage = (id) => {
         if(this.props.work) {
-            console.log(id);
             const newMessageListWork = this.state.messagesStateWork.filter(message => message.id !== id);
-            this.setState({
-                messagesStateWork: newMessageListWork
-            })
+            this.setState({ messagesStateWork: newMessageListWork });
         } else {
-            console.log(id);
             const newMessageListFlud = this.state.messagesStateFlud.filter(message => message.id !== id);
-            console.log(newMessageListFlud);
-            this.setState({
-                messagesStateFlud: newMessageListFlud
-            })
-            console.log(this.state.messagesStateFlud);
+            this.setState({ messagesStateFlud: newMessageListFlud });
         }
     }
     receiveEditedMessage = (text, id) => {

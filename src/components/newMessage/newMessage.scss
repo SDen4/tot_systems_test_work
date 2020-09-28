@@ -1,0 +1,37 @@
+.newMessage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: $mainBGColor;
+}
+
+.newMessage__input {
+    width: 90%;
+    border: 0;
+    outline: none;
+    padding: 12px 10px;
+    background-color: $mainBGColor;
+    border-radius: 10px;
+    font: {
+        size: $baseFontSize;
+        family: $mainFont;
+    }
+}
+
+.newMessage__input::placeholder {
+    font-size: $baseFontSize;
+    color: $textPlasseholderColor;
+}
+
+.newMessage__button_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

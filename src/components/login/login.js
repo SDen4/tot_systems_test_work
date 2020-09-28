@@ -110,15 +110,12 @@ class Login extends Component {
     // it's just an imitation of authorisation!!!
     // for demo version!!!
     enter = (event) => {
-        console.log('login: ' + this.state.login);
-        console.log('passw: ' + this.state.password);
-        console.log('both: ' + this.state.errorBoth);
-
         event.preventDefault();
 
         this.validationLogin();
         this.validationPassword();
         this.validationBoth();
+
         if(this.state.login === authorisation.login && this.state.password === authorisation.password) {
             this.props.enter();
             this.props.loginName(authorisation.login);
