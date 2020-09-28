@@ -1,9 +1,4 @@
 export default {
-    login: '',
-    password: ''
+    login: 'Den',
+    password: '12345'
 }
-
-// export default {
-//     login: 'Den',
-//     password: '12345'
-// }
