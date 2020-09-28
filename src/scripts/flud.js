@@ -66,14 +66,14 @@ export default [
         id: 983460,
         author: "Boss",
         message: "Да, типа того...",
-        date: "01.09.2020",
+        date: "02.09.2020",
         time: "14:08",
         removable: false
     },{
         id: 983461,
         author: "Mark",
         message: "Ну возьми Сяоми)))",
-        date: "01.09.2020",
+        date: "03.09.2020",
         time: "14:09",
         removable: false
     }

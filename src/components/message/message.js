@@ -43,7 +43,10 @@ class Message extends Component {
           onChange={this.handleEditMessage}
         >
         </input>
-        <span className='message__time'>{this.props.message.time}</span>
+        <div className='message__time_wrapper'>
+          <span className='message__time_date message__date'>{this.props.message.date}</span>
+          <span className='message__time_date'>{this.props.message.time}</span>
+        </div>
         {deleteMessage}
       </li>
     )

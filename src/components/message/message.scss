@@ -33,10 +33,19 @@
     overflow-wrap: break-word;
 }
 
-.message__time {
+.message__time_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.message__time_date {
     font-size: $messageTimeFontSize;
     color: $textPlasseholderColor;
-    text-align: right;
+}
+
+.message__date {
+    margin-right: 10px;
 }
 
 .message__buttons_unactive {
