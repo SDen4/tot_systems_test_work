@@ -10,39 +10,56 @@ class Message extends Component {
     deleteIdMessage: null
   }
   render() {
-    const deleteMessage = this.state.deleteMessageState && <DeleteMessage
-      message={this.props.message.message}
-      deleteMessage={this.deleteMyMessage}
-      canselDelete={this.canselDelete}
-    />
+    const buttonDelete =
+      <button
+        className='button__cross'
+        onClick={(e) => this.confirmDelete(this.props.message.id)}
+      >
+        <div className='button__cross_segment'></div>
+      </button>
+
+    const buttonEdit =
+      <button
+        className='button__cross button__edit'
+        onClick={(e) => this.editMessage(this.props.message.id)}
+      >
+        <div className='button__cross_segment button__edit_segment'></div>
+      </button>
+
+    const messageButtons = this.props.message.removable &&
+      <div className='message__buttons'>
+        {buttonDelete}
+        {buttonEdit}
+      </div>
+
+    const currentMessage = !this.state.editMessageState && 
+      <span className='message__message'>
+        {this.props.message.message}
+      </span>
+
+    const editMessageInput = this.state.editMessageState && 
+      <input 
+        className='message__input_edit'
+        value={this.state.editedText}
+        onChange={this.handleEditMessage}
+      >
+      </input>
+
+    const deleteMessage = this.state.deleteMessageState &&
+      <DeleteMessage
+        message={this.props.message.message}
+        deleteMessage={this.deleteMyMessage}
+        canselDelete={this.canselDelete}
+      />
+
     return (
       <li className='message'>
         <div className='message__up'>
           <span className='message__author'>{this.props.message.author}:</span>
-          <div className={`${this.props.message.removable ? 'message__buttons' : 'message__buttons_unactive'}`}>
-            <button
-              className='button__cross'
-              onClick={(e) => this.confirmDelete(this.props.message.id)}
-            >
-              <div className='button__cross_segment'></div>
-            </button>
-            <button
-              className='button__cross button__edit'
-              onClick={(e) => this.editMessage(this.props.message.id)}
-            >
-              <div className='button__cross_segment button__edit_segment'></div>
-            </button>
-          </div>
+          {messageButtons}
         </div>
-        <span className={`${this.state.editMessageState ? 'message__unactive' : 'message__message'}`}>
-          {this.props.message.message}
-        </span>
-        <input
-          className={`${this.state.editMessageState ? 'message__input_edit' : 'message__unactive'}`}
-          value={this.state.editedText}
-          onChange={this.handleEditMessage}
-        >
-        </input>
+        {currentMessage}
+        {editMessageInput}
         <div className='message__time_wrapper'>
           <span className='message__time_date message__date'>{this.props.message.date}</span>
           <span className='message__time_date'>{this.props.message.time}</span>

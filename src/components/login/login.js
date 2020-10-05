@@ -14,6 +14,8 @@ class Login extends Component {
         const errorBoth = this.state.errorBoth && <div className= 'login__error_uncorrect_both'>
                 Неверный логин или пароль
             </div>
+        const errorLogin = this.state.errorLogin && <div className='login__error'>Заполните поле 'Имя пользователя'</div>
+        const errorPassword = this.state.errorPassword && <div className='login__error'>Заполните поле 'Пароль'</div>
         return (
             <section className='login'>
                 <h1 className='login__title'>Planctonics Company Ltd</h1>
@@ -34,9 +36,7 @@ class Login extends Component {
                                             value={this.state.login}
                                             onChange={this.handleChangeLogin}
                                         ></input>
-                                        <div className={`${this.state.errorLogin ? 'login__error' : 'login__error_unactive'}`}>
-                                            Заполните поле 'Имя пользователя'
-                                        </div>
+                                        {errorLogin}
                                     </div>
                                 </label>
                                 {errorBoth}
@@ -52,9 +52,7 @@ class Login extends Component {
                                             value={this.state.password}
                                             onChange={this.handleChangePassword}
                                         ></input>
-                                        <div className={`${this.state.errorPassword ? 'login__error' : 'login__error_unactive'}`}>
-                                            Заполните поле 'Пароль'
-                                        </div>
+                                        {errorPassword}
                                     </div>
                                 </label>
                                 <button className='button' type='submit'>Войти</button>

@@ -18,11 +18,10 @@ class Choose extends Component {
                 work={this.state.work}
                 login={this.props.login}
             />
+        const greet = !this.state.chat && <h2 className='choose__grit'>Привет, {this.props.login}!</h2>
         return (
             <section className='choose'>
-                <h2 className={`${this.state.chat ? 'choose__grit_unactive' : 'choose__grit'}`}>
-                    Привет, {this.props.login}!
-                </h2>
+                {greet}
                 {chatWindow}
                 <div className={`${this.state.chat ? 'choose__content choose__content_mod' : 'choose__content'}`}>
                     <button
