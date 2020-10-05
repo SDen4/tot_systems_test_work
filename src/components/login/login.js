@@ -15,17 +15,17 @@ class Login extends Component {
                 Неверный логин или пароль
             </div>
         return (
-            <div className='login'>
+            <section className='login'>
                 <h1 className='login__title'>Planctonics Company Ltd</h1>
                 <div className='login__block'>
                     <div className='login__wrapper'>
-                        <div className='login__subtitle'>Авторизация</div>
+                        <h2 className='login__subtitle'>Авторизация</h2>
                         <div className='login__content'>
                             <form className='login__form' onSubmit={this.enter}>
                                 <label className='login__form_data'>
                                     <div className='login__form_pic login__form_pic_login'></div>
                                     <div className='login__form_info'>
-                                        <div className='login__form_name'>Пользователь</div>
+                                        <h3 className='login__form_name'>Пользователь</h3>
                                         <input
                                             className='login__form_input'
                                             type='text'
@@ -43,7 +43,7 @@ class Login extends Component {
                                 <label className='login__form_data'>
                                     <div className='login__form_pic login__form_pic_password'></div>
                                     <div className='login__form_info'>
-                                        <div className='login__form_name'>Пароль</div>
+                                        <h3 className='login__form_name'>Пароль</h3>
                                         <input
                                             className='login__form_input'
                                             type='password'
@@ -62,7 +62,7 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 

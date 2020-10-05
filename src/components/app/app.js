@@ -14,10 +14,10 @@ class App extends Component {
         const login = this.state.login && <Login enter={this.enter} loginName={this.loginName} backToButton={this.comeToButton}/>
         const choose = this.state.choose && <Choose backToLogin={this.enter} login={this.state.loginName}/>
         return (
-            <div className='main'>
+            <article className='main'>
                 {login}
                 {choose}
-            </div>
+            </article>
         );
     }
     enter = () => {

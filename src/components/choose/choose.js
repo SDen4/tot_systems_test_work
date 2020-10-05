@@ -19,7 +19,7 @@ class Choose extends Component {
                 login={this.props.login}
             />
         return (
-            <div className='choose'>
+            <section className='choose'>
                 <h2 className={`${this.state.chat ? 'choose__grit_unactive' : 'choose__grit'}`}>
                     Привет, {this.props.login}!
                 </h2>
@@ -38,7 +38,7 @@ class Choose extends Component {
                         onClick={this.openChatFlud}
                     >Поболтать</button>
                 </div>
-            </div>
+            </section>
         )
     }
     backToLogin = () => {

@@ -29,7 +29,7 @@ class Chat extends Component {
             />
         );
         return (
-            <div className='chat'>
+            <section className='chat'>
                 <h2
                     className={`${this.props.work ? 'chat__subtitle chat__subtitle_work' : 'chat__subtitle chat__subtitle_flud'}`}
                 >{title}</h2>
@@ -44,7 +44,7 @@ class Chat extends Component {
                     work={this.props.work}
                     login={this.props.login}
                 />
-            </div>
+            </section>
         )
     }
     addNewMessage = (obj) => {

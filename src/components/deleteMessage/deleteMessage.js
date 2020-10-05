@@ -3,10 +3,10 @@ import React, {Component} from 'react';
 class DeleteMessage extends Component {
   render() {
     return (
-        <div className='delete__confirm'>
-          <div className='delete__confirm_text'>
+        <section className='delete__confirm'>
+          <h2 className='delete__confirm_subtitle'>
             Вы действительно хотите удалить ваше сообщение: '{this.props.message}'?
-          </div>
+          </h2>
           <div className='delete__confirm_buttons'>
             <button
                 className='button'
@@ -17,7 +17,7 @@ class DeleteMessage extends Component {
               onClick={this.canselDelete}
             >Отмена</button>
           </div>
-        </div>
+        </section>
     )
   }
   deleteMyMessage = () => {
