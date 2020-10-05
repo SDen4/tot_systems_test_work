@@ -12,7 +12,7 @@ class Login extends Component {
     }
     render() {
         const errorBoth = this.state.errorBoth && <div className= 'login__error_uncorrect_both'>
-                Не верный логин или пароль
+                Неверный логин или пароль
             </div>
         return (
             <div className='login'>
@@ -120,6 +120,7 @@ class Login extends Component {
             this.props.enter();
             this.props.loginName(authorisation.login);
         };
+
     }
 };
 

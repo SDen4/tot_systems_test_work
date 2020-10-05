@@ -57,12 +57,12 @@
 }
 
 .message__input_edit {
-    border: 0;
-    padding: 0;
-    border-radius: 5px;
-    outline: none;
     font: {
         size: $baseFontSize;
         family: $mainFont;
     }
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
 }
