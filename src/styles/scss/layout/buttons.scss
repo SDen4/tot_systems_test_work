@@ -213,19 +213,28 @@
     &:hover .button__edit_segment {
         background-color: $buttonBGColorHover;
     }
+    &:hover .button__edit_segment:after {
+        border-top: 6px solid $buttonBGColorHover;
+    }
 }
 
 .button__edit_segment {
+    width: 4px;
     &:after {
-        width: 2px;
-        height: 5px;
-        border-radius: inherit;
         content: '';
         display: block;
         position: absolute;
         top: 6px;
         left: -2px;
-        background-color: inherit;
-        transform: rotate(90deg);
+        background-color: unset;
+        transform: rotate(0deg);
+        transition: $trahsitionHoverDuration;
+
+        //css triangle
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 6px solid $textPlasseholderColor;
     }
 }
